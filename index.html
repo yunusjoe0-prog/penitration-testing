@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>اختبار الاختراق الأخلاقي - مسار تعلم ومصادر مجانية</title>
+<meta name="description" content="مسار تعلم اختبار الاختراق الأخلاقي مع روابط لمصادر مجانية رسمية.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--green:#0a6b3b;--green-d:#064d2a;--green-l:#e6f5ec;--line:#cfe7d8;--ink:#12261b;--mute:#4d6a5a;--bg:#fff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Tajawal","Segoe UI",Tahoma,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.7}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid #f5b700;outline-offset:2px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 18px}
+header.top{background:var(--green);color:#fff}
+.top .wrap{display:flex;align-items:center;gap:10px;padding-top:12px;padding-bottom:12px;font-weight:700}
+.top .sp{flex:1}
+.top a.sis{background:var(--green-d);padding:6px 14px;border-radius:9px;font-size:14px}
+.hero{background:linear-gradient(180deg,var(--green) 0,var(--green-d) 100%);color:#fff;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;opacity:.12;
+ background-image:linear-gradient(#fff 1px,transparent 1px),linear-gradient(90deg,#fff 1px,transparent 1px);background-size:34px 34px}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.3fr 1fr;gap:24px;align-items:center;padding-top:42px;padding-bottom:54px}
+.hero h1{font-size:clamp(28px,5.4vw,46px);line-height:1.25;margin:0 0 12px;font-weight:800}
+.hero p{margin:0 0 22px;font-size:18px;color:#d7f0e1;max-width:34em}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:10px;padding:11px 20px;font-weight:700;font-size:16px;border:2px solid transparent;cursor:pointer}
+.btn-w{background:#fff;color:var(--green)}
+.btn-w:hover{background:var(--green-l)}
+.hero-art{display:flex;justify-content:center}
+.hero-logo{width:min(220px,55vw);filter:drop-shadow(0 10px 24px rgba(0,0,0,.3))}
+.stats{display:flex;gap:26px;flex-wrap:wrap;margin-top:22px;color:#d7f0e1;font-size:15px}
+.stats b{display:block;color:#fff;font-size:24px}
+section{padding:44px 0}
+h2{font-size:28px;margin:0 0 6px;color:var(--green-d)}
+.sub{margin:0 0 26px;color:var(--mute)}
+.warn{background:var(--green-l);border-block:1.5px solid var(--line);padding:34px 0}
+.warn ul{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.warn li{display:flex;gap:10px;align-items:flex-start;background:#fff;border:1.5px solid var(--line);border-radius:12px;padding:14px}
+.warn li svg{color:var(--green);flex:none;margin-top:2px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px}
+.card{border:1.5px solid var(--line);border-radius:14px;padding:18px;background:#fff;display:flex;flex-direction:column;gap:12px}
+.card .head{display:flex;align-items:center;gap:12px}
+.ico{width:50px;height:50px;border-radius:12px;background:var(--green-l);color:var(--green);display:grid;place-items:center;flex:none}
+.card h3{margin:0;font-size:19px;line-height:1.35;color:var(--green-d)}
+.card p{margin:0;color:var(--mute);font-size:15px}
+.links{display:flex;flex-direction:column;gap:8px;margin-top:2px}
+.lnk{display:block;border:1.5px solid var(--line);border-radius:10px;padding:9px 12px;background:#fff}
+.lnk:hover{background:var(--green-l);border-color:var(--green)}
+.lnk b{display:block;color:var(--green);font-size:15px;direction:ltr;text-align:right;unicode-bidi:plaintext}
+.lnk span{display:block;color:var(--mute);font-size:13.5px;line-height:1.5}
+.contact{background:var(--green-l);border-block:1.5px solid var(--line)}
+.cgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.citem{display:flex;gap:12px;align-items:center;background:#fff;border:1.5px solid var(--line);border-radius:12px;padding:14px;color:inherit}
+a.citem:hover{border-color:var(--green)}
+.citem svg{color:var(--green);flex:none}
+.citem small{display:block;color:var(--mute);font-size:13px;line-height:1.3}
+.citem b{display:block;color:var(--green-d);font-size:16px;word-break:break-all}
+.citem b.ltr{direction:ltr;text-align:right;unicode-bidi:plaintext}
+footer{background:var(--green-d);color:#cfe7d8;padding:26px 0;font-size:14px}
+footer b{color:#fff}
+@media(max-width:720px){.hero .wrap{grid-template-columns:1fr;text-align:center}.hero p{margin-inline:auto}.stats{justify-content:center}.hero-art{order:-1}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5L16 9.5"/></svg> <span>اختبار الاختراق الأخلاقي</span><span class="sp"></span><a class="sis" href="https://yunusjoe0-prog.github.io/hacker-high-school/">مدرسة الهاكر الثانوية</a></div></header>
+
+<div class="hero"><div class="wrap">
+  <div>
+    <h1>تعلّم اختبار الاختراق الأخلاقي خطوة بخطوة</h1>
+    <p>مسار منظّم يجمع مصادر مجانية ورسمية: من الأساسيات إلى المنهجيات والتدريب العملي في بيئات قانونية.</p>
+    <a class="btn btn-w" href="#path">ابدأ المسار</a>
+    <div class="stats"><div><b>7</b>مراحل</div><div><b>22</b>مصدرًا</div><div><b>مجاني</b>للتعلم</div></div>
+  </div>
+  <div class="hero-art"><svg viewBox="0 0 200 220" class="hero-logo" aria-hidden="true">
+  <path d="M100 8l82 30v62c0 55-36 92-82 112-46-20-82-57-82-112V38z" fill="#fff" stroke="#0a6b3b" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M100 26l66 24v50c0 44-28 75-66 92-38-17-66-48-66-92V50z" fill="#e6f5ec"/>
+  <rect x="52" y="76" width="96" height="70" rx="9" fill="#0a6b3b"/>
+  <rect x="52" y="76" width="96" height="14" rx="7" fill="#064d2a"/>
+  <circle cx="64" cy="83" r="2.6" fill="#fff"/><circle cx="73" cy="83" r="2.6" fill="#fff"/><circle cx="82" cy="83" r="2.6" fill="#fff"/>
+  <path d="M68 104l16 12-16 12" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M94 130h32" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+  <g stroke="#0a6b3b" stroke-width="3" fill="#0a6b3b" opacity=".55">
+    <path d="M18 120h-14M182 120h14M30 160l-12 8M170 160l12 8" fill="none" stroke-linecap="round"/>
+    <circle cx="4" cy="120" r="4"/><circle cx="196" cy="120" r="4"/><circle cx="18" cy="168" r="4"/><circle cx="182" cy="168" r="4"/>
+  </g>
+</svg></div>
+</div></div>
+
+<div class="warn"><div class="wrap">
+  <h2>قواعد لا تُكسر</h2>
+  <p class="sub">الاختبار الأخلاقي يعني إذنًا ونطاقًا وتقريرًا. غير ذلك يُعد جريمة.</p>
+  <ul>
+    <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v16M6 20h12M5 7h14M5 7l-3 7h6zM19 7l-3 7h6z"/></svg><span>لا تختبر إلا ما تملكه أو لديك إذن مكتوب به.</span></li>
+    <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5L16 9.5"/></svg><span>حدّد النطاق وقواعد الاشتباك قبل أي فحص.</span></li>
+    <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg><span>أبلغ عن الثغرات بمسؤولية ولا تستغلها.</span></li>
+    <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M8 7h7"/></svg><span>وثّق خطواتك واكتب تقريرًا واضحًا بالنتائج والحلول.</span></li>
+  </ul>
+</div></div>
+
+<section id="path"><div class="wrap">
+  <h2>مسار التعلم</h2>
+  <p class="sub">اتبع المراحل بالترتيب، وكل بطاقة تضم مصادر رسمية تفتح في صفحة جديدة.</p>
+  <div class="grid">
+    <article class="card"><div class="head"><div class="ico"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M12 7v5M12 12l-6 5M12 12l6 5"/></svg></div><h3>1. الأساس: الشبكات والأنظمة</h3></div><p>قبل أي اختبار تحتاج فهم الشبكات ولينكس وويندوز والبروتوكولات.</p><div class="links"><a class="lnk" href="https://yunusjoe0-prog.github.io/hacker-high-school/" target="_blank" rel="noopener"><b>Hacker High School</b><span>كتب مدرسة الهاكر الثانوية بالعربية (الموقع الشقيق)</span></a><a class="lnk" href="https://www.kali.org/docs/" target="_blank" rel="noopener"><b>Kali Linux Docs</b><span>توثيق نظام كالي الرسمي</span></a></div></article>
+    <article class="card"><div class="head"><div class="ico"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4l-6 2v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/></svg></div><h3>2. المنهجيات والمعايير</h3></div><p>اختبار الاختراق عمل منظّم له مراحل وقواعد وتقارير، وليس تجربة عشوائية.</p><div class="links"><a class="lnk" href="https://owasp.org/www-project-web-security-testing-guide/" target="_blank" rel="noopener"><b>OWASP Web Security Testing Guide</b><span>الدليل المرجعي لاختبار أمان الويب</span></a><a class="lnk" href="https://www.isecom.org/research.html" target="_blank" rel="noopener"><b>OSSTMM - ISECOM</b><span>منهجية مفتوحة من الجهة صاحبة مدرسة الهاكر</span></a><a class="lnk" href="https://csrc.nist.gov/pubs/sp/800/115/final" target="_blank" rel="noopener"><b>NIST SP 800-115</b><span>دليل NIST للاختبار والتقييم الأمني</span></a><a class="lnk" href="https://www.pentest-standard.org/" target="_blank" rel="noopener"><b>PTES</b><span>معيار تنفيذ اختبار الاختراق</span></a></div></article>
+    <article class="card"><div class="head"><div class="ico"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></div><h3>3. أمان تطبيقات الويب</h3></div><p>أكثر المجالات طلبًا: فهم الثغرات الشائعة وكيفية اكتشافها والحماية منها.</p><div class="links"><a class="lnk" href="https://owasp.org/www-project-top-ten/" target="_blank" rel="noopener"><b>OWASP Top 10</b><span>أخطر عشر مخاطر على تطبيقات الويب</span></a><a class="lnk" href="https://portswigger.net/web-security" target="_blank" rel="noopener"><b>PortSwigger Web Security Academy</b><span>دروس ومعامل مجانية تفاعلية</span></a><a class="lnk" href="https://cheatsheetseries.owasp.org/" target="_blank" rel="noopener"><b>OWASP Cheat Sheet Series</b><span>أوراق مرجعية للحماية</span></a></div></article>
+    <article class="card"><div class="head"><div class="ico"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg></div><h3>4. التدريب في بيئات قانونية</h3></div><p>تدرّب فقط على منصات مخصصة للتعلم أو على أجهزة تملكها.</p><div class="links"><a class="lnk" href="https://overthewire.org/wargames/" target="_blank" rel="noopener"><b>OverTheWire</b><span>ألعاب تعليمية تبدأ من الصفر</span></a><a class="lnk" href="https://picoctf.org/" target="_blank" rel="noopener"><b>picoCTF</b><span>مسابقات وتدريب للمبتدئين</span></a><a class="lnk" href="https://tryhackme.com/" target="_blank" rel="noopener"><b>TryHackMe</b><span>مسارات تعليمية موجّهة</span></a><a class="lnk" href="https://www.hackthebox.com/" target="_blank" rel="noopener"><b>Hack The Box</b><span>أجهزة ومعامل متقدمة</span></a></div></article>
+    <article class="card"><div class="head"><div class="ico"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="8" height="11" rx="4"/><path d="M12 8V5M8 12H4M16 12h4M8 16l-3 2M16 16l3 2"/></svg></div><h3>5. تطبيقات للتجربة على جهازك</h3></div><p>تطبيقات ضعيفة عمدًا تثبّتها على جهازك وتتدرب عليها بأمان.</p><div class="links"><a class="lnk" href="https://owasp.org/www-project-juice-shop/" target="_blank" rel="noopener"><b>OWASP Juice Shop</b><span>متجر إلكتروني مليء بالثغرات للتعلم</span></a><a class="lnk" href="https://owasp.org/www-project-webgoat/" target="_blank" rel="noopener"><b>OWASP WebGoat</b><span>تطبيق تعليمي بدروس موجّهة</span></a><a class="lnk" href="https://github.com/digininja/DVWA" target="_blank" rel="noopener"><b>DVWA</b><span>تطبيق ويب ضعيف للتجربة المحلية</span></a></div></article>
+    <article class="card"><div class="head"><div class="ico"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 6.5a4 4 0 0 0-5 5L3 18l3 3 6.5-6.5a4 4 0 0 0 5-5l-3 3-2-2z"/></svg></div><h3>6. الأدوات</h3></div><p>تعلّم لماذا تعمل الأداة قبل أن تشغّلها.</p><div class="links"><a class="lnk" href="https://nmap.org/book/" target="_blank" rel="noopener"><b>Nmap Reference Guide</b><span>الدليل الرسمي لفحص الشبكات</span></a><a class="lnk" href="https://www.wireshark.org/docs/" target="_blank" rel="noopener"><b>Wireshark Docs</b><span>تحليل حركة الشبكة</span></a><a class="lnk" href="https://portswigger.net/burp/documentation" target="_blank" rel="noopener"><b>Burp Suite Docs</b><span>اختبار تطبيقات الويب</span></a></div></article>
+    <article class="card"><div class="head"><div class="ico"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="M12 12l6-6"/></svg></div><h3>7. معرفة التهديدات والثغرات</h3></div><p>افهم كيف يفكر المهاجم وكيف تُوثَّق الثغرات.</p><div class="links"><a class="lnk" href="https://attack.mitre.org/" target="_blank" rel="noopener"><b>MITRE ATT&amp;CK</b><span>قاعدة معرفة بأساليب المهاجمين</span></a><a class="lnk" href="https://www.cve.org/" target="_blank" rel="noopener"><b>CVE Program</b><span>فهرس الثغرات المعروفة</span></a><a class="lnk" href="https://nvd.nist.gov/" target="_blank" rel="noopener"><b>NVD</b><span>قاعدة الثغرات الوطنية الأمريكية</span></a></div></article>
+  </div>
+</div></section>
+
+<section class="contact"><div class="wrap">
+  <h2>تواصل معنا</h2>
+  <p class="sub">للاقتراحات أو للإبلاغ عن رابط أو كتاب لا يعمل.</p>
+  <div class="cgrid">
+    <div class="citem"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg><div><small>الاسم</small><b>يونس دريسي</b></div></div>
+    <a class="citem" href="tel:+213659105816"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg><div><small>الهاتف</small><b class="ltr">+213659105816</b></div></a>
+    <a class="citem" href="mailto:drysyywnsalhqyqy@gmail.com"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><div><small>البريد الإلكتروني</small><b class="ltr">drysyywnsalhqyqy@gmail.com</b></div></a>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <p><b>اختبار الاختراق الأخلاقي</b> - موقع شقيق لـ <a href="https://yunusjoe0-prog.github.io/hacker-high-school/"><b>مدرسة الهاكر الثانوية</b></a>.</p>
+  <p>الموقع يجمع روابط لمصادر تعليمية مجانية تملكها جهاتها الأصلية، ولا يستضيف محتواها. استخدم المعرفة في الدفاع والتعلم القانوني فقط.</p>
+</div></footer>
+</body>
+</html>
